@@ -1,2 +1,10 @@
+
+version-5
+- 使用opengl添加顶点缓存对象
+- glGenVertexArrays和glBindVertexArray创建并绑定一个顶点数组对象
+- glGenBuffers和glBindBuffer创建并绑定一个顶点缓存对象
+- glBindData数据从内存中复制到OpenGL服务端
+- glDrawArrays绘制顶点数据
+
 version-4
 - create a opengl window

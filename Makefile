@@ -1,4 +1,4 @@
-OpenGLTutorial : main.cpp Display.cpp 
+OpenGLTutorial : main.cpp Display.cpp  Mesh.cpp
 	g++ $^ -o $@ -lSDL2 -lGLEW
 
 clean : 
