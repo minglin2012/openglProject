@@ -1,10 +1,30 @@
+version-7
+- 使用着色器编程 
+- glCreateProgram 创建一个program
+- glCreateShader 创建着色器
+- glShaderSource 为着色器添加源
+- glCompilerShader 编译Shader
+- glAttachShader 绑定shader
+- glLinkProgram 链接shader
+- glValidateProgram 验证shader
+- glUseProgram 使用shader绘图
 
-version-5
+
+version-6
 - 使用opengl添加顶点缓存对象
 - glGenVertexArrays和glBindVertexArray创建并绑定一个顶点数组对象
 - glGenBuffers和glBindBuffer创建并绑定一个顶点缓存对象
 - glBindData数据从内存中复制到OpenGL服务端
 - glDrawArrays绘制顶点数据
+
+
+version-5
+- 渲染管道：
+1 原始数据
+2 顶点着色器，处理之前所有独立单元的数据，得到一个一个点
+3 光栅化阶段，将点连接成三角形，并填充三角形
+4 片元着色器，从三角形中提取每一个顶点，为每个顶点生成颜色信息，输出图像
+
 
 version-4
 - create a opengl window

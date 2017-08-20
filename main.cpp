@@ -1,6 +1,7 @@
 #include <GL/glew.h>
 #include "Display.h"
 #include "Mesh.h"
+#include "Shader.h"
 int main(int argc, char** argv)
 {
 	Display display(800,600,"www.xoxo.work");
@@ -12,10 +13,12 @@ int main(int argc, char** argv)
 	};
 	Mesh mesh(vertices,sizeof(vertices) / sizeof (vertices[0]));
 	
+	Shader shader("./res/basicShader");
+
 	while (!display.IsClosed())
 	{
 		display.Clear(0.0f,0.15f,0.3f,1.0f);
-
+		shader.Bind();
 		mesh.Draw();
 
 		display.Update();
